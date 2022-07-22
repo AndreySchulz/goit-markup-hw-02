@@ -1,3 +1,71 @@
+  /* #2196F3 accent color
+    #757575 color text
+    #212121 color heading
+    #F5F4FA block color
+    #2F303A footer color*/
+:root{
+    --main-haeding-color:#FFFFFF;
+    --accent-color:#2196F3;
+    --logo-color:#000000;
+    --heading-color:#212121;
+    --text-color:#757575;
+    --block-color:#F5F4FA;
+    --footer-color:#2F303A;
+}
+/* общие классы*/
 body{
-    
+    font-family:roboto;
+    color: var(--text-color);
+}
+li{
+    list-style: none;
+}
+body a{
+    text-decoration: none;
+}
+.head-color{
+    color: var(--heading-color);
+}
+/* начало */
+.logo{
+    color: var(--logo-color);
+}
+.logo span{
+    color:var(--accent-color);
+}
+/* nav */
+.navi .navi-list:hover, 
+.navi navi-list:focus{
+    color: var(--accent-color);
+}
+.contact-us{
+    color: var(--text-color);
+}
+.contact-us:focus,
+.contact-us:hover{
+    color: var(--accent-color);
+}
+/* hero */
+.hero{
+    background-color: var(--footer-color);
+}
+.hero h1{
+    color: var(--main-haeding-color);
+}
+.hero .order{
+    color: var(--main-haeding-color);
+    background-color: var(--accent-color);
+}
+/* основные качества */
+.qualities > h2{
+    display: none;
+}
+
+/* Чем мы занимаемся */
+/* footer */
+footer{
+    background-color: var(--footer-color);
+}
+footer .maps{
+    color: var(--main-haeding-color);
 }
