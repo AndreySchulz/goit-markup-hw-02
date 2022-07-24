@@ -6,6 +6,7 @@
     --text-color:#757575;
     --block-color:#F5F4FA;
     --footer-color:#2F303A;
+    --footer-contact:rgba(255, 255, 255, 0.6);
 }
 /* общие классы*/
 body{
@@ -16,8 +17,10 @@ body{
 .list{
     list-style: none;
 }
-h2,
-h3,
+.section-heading,
+.qualities-heading,
+.portfolio-heading,
+.card-heading,
 .navi .navi-list{
     color: var(--heading-color);
 }
@@ -39,21 +42,31 @@ h3,
     letter-spacing: 0.02em;
 }
 .navi .navi-list{
-    font-weight: 500;
+    
+    /* font-weight: 500; */
     line-height: 1.14;
     text-decoration: none;
 }
 .navi .navi-list:hover, 
-.navi navi-list:focus{
+.navi .navi-list:focus{
     color: var(--accent-color);
 }
 .contact-us{
     color: var(--text-color);
     text-decoration: none;
+    
 }
 .contact-us:focus,
 .contact-us:hover{
     color: var(--accent-color);
+}
+.navi .on-page{
+    color: var(--accent-color);
+}
+.contact-us,
+.navi{
+    font-size: 14px;
+    font-weight: 500;
 }
 /* hero */
 .hero{
@@ -66,6 +79,7 @@ h3,
     font-weight: 900;
     font-size: 44px;
     line-height: 2;
+    text-transform: uppercase;
     
 }
 .hero .order{
@@ -86,7 +100,7 @@ h3,
 .qualities .qualities-heading{
     font-weight: 700;
     font-size: 14px;
-
+    text-transform: uppercase; 
 }
 .qualities .qualities-text{
     font-weight: 400;
@@ -123,9 +137,11 @@ background-color: var(--block-color);
 footer{
     background-color: var(--footer-color);
 }
+.adress{
+    font-style: normal;
+}
 .footer-contact{
     font-weight: 400;
-    font-size: 14px;
 }
 .footer-contact .logo{
     color: var(--main-haeding-color);
@@ -134,7 +150,10 @@ footer{
 .footer-contact .maps{
     color: var(--main-haeding-color);
     text-decoration: none;
-
+}
+.footer-contact .contact-us{
+    color: var(--footer-contact);
+    font-weight: 400;
 }
 /* портфолио */
 .portfolio .filter-buttun{
